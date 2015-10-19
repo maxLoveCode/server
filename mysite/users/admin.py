@@ -4,9 +4,11 @@ from django.contrib import admin
 from django.contrib import admin
 from .models import User
 
-class UserAdmin(admin.ModelAdmin):
-	fieldsets = [
-		('test',{'fields':['name']}),
-	]
 
-admin.site.register(User)
+class UserAdmin(admin.ModelAdmin):
+    fieldsets = [
+        ('UserName', {'fields': ['name']}),
+        ('Avatar', {'fields': ['avatar']}),
+    ]
+
+admin.site.register(User, UserAdmin)
