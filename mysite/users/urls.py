@@ -7,6 +7,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^(?P<users_id>[0-9]+)/add_user$', views.add_user, name='add_user')
+    url(r'^(?P<users_id>[0-9]+)/add_user$', views.add_user, name='add_user'),
+    url(r'^(?P<users_id>[0-9]+)/$', views.user_detail, name='user_detail')
 ]
 
