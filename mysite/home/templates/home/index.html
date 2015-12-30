@@ -1,37 +1,62 @@
+<!DOCTYPE html>
 <html>
-<link href='https://fonts.googleapis.com/css?family=Passero+One' rel='stylesheet' type='text/css'>
-<style>
-    @font-face {
-        font-family: homefont;
-        src: url(Sohoma_Light_Condensed.ttf);
-    }
-
-    div {
-    font-family: homefont;
-}
-</style>
+{% load staticfiles %}
 <head>
 
-<title>
-    Kidy Vision
-</title>
+    <link rel="stylesheet" type="text/css" href= "{% static 'home/home.css' %}" />
+    <script src="{% static 'home/jquery-1.11.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'home/home.js' %}"></script>
+    <title>
+        Kidy Vision
+    </title>
 </head>
 
-<body background="http://imglf0.nosdn.127.net/img/VzFPY05nQ3ZYNU1wVzdUcnltQlovbXd5bVhySWFnQkhyQ09Ka3EyODRXOE9NVGJNWVZqYUZ3PT0.jpg">
-<div>With CSS3, websites can finally use fonts other than the pre selected "web-safe" fonts.</div>
-    <!--<img src="http://imglf0.nosdn.127.net/img/VzFPY05nQ3ZYNU1wVzdUcnltQlovbXd5bVhySWFnQkhyQ09Ka3EyODRXOE9NVGJNWVZqYUZ3PT0.jpg">-->
-    <div style="color:white; text-align: center;">
-        Kidy Vision
-</div>
+<body>
 
-<p>
-    <div style="color:white; text-align: center;">
-        Art&dot;Technology&dot;Life
-</div>
-</p>
-    <div style="color:white; text-align: left; ">
-        &copy;copyright kidy photography
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix">
+                <li class="current-item"><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Photography</a>
+
+                    <ul class="sub-menu">
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Artists</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Computer Vision</a>
+
+                    <ul class= "sub-menu">
+                        <li><a href="#">Project</a> </li>
+            </ul>
+                </li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Site Help</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <div class="fullscreen-bg">
+        <video id="video1" loop autoplay class="fullscreen-bg__video">
+         <source src="{% static 'home/background.mp4' %}" type="video/mp4">
+         <source src="{% static 'home/background.mov' %}" type="video/quicktime">
+         <!-- fallback -->
+            <script type="text/javascript">
+               QT_WriteOBJECT("{% static 'home/background.mov' %}" , '320', '240', '');
+         </script>
+        </video>
+    </div>
+
+    <div class="tagline">
+           A r t  &middot; T e c h n o l o g y  &middot;  L i f e
+    </div>
+
+    <div style="color:white; text-align: left; ">
+            &copy;copyright kidy photography
+    </div>
+
 </body>
 
 </html>
