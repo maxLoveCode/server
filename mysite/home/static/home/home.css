@@ -101,7 +101,7 @@ body {
     color: white;
     position: absolute;
     float: left;
-    padding-top: 400px;
+    top: 300pt;
     align-content: center;
     text-align: center !important;
     clear: both;
@@ -119,5 +119,9 @@ body {
     left: 0;
     overflow: hidden;
     z-index: -100;
+}
+
+.fullscreen-bg__video{
+    position: absolute;
 }
 
