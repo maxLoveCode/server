@@ -6,7 +6,6 @@ $(document).ready(function(){
     });
 
     $(".fullscreen-bg__video").bind('ended', function(){
-        alert("ended")
         this.play();
     });
 
