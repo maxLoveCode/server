@@ -2,6 +2,7 @@
 <html lang="en">
 {% load staticfiles %}
 <head>
+
     <meta charset="UTF-8">
     <title>cv projects</title>
     <link rel="stylesheet" type="text/css" href= "{% static 'cvproject/home.css' %}" />
@@ -12,7 +13,7 @@
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
-                <li class="current-item"><a href="#">Home</a></li>
+                <li class="current-item"><a href='.'>Home</a></li>
                 <li>
                     <a href="#">Photography</a>
 
@@ -25,7 +26,7 @@
                     <a href="#">Computer Vision</a>
 
                     <ul class= "sub-menu">
-                        <li><a href="projects">Project</a> </li>
+                        <li><a href="#">Project</a> </li>
             </ul>
                 </li>
                 <li><a href="#">Photos</a></li>
@@ -35,14 +36,10 @@
     </div>
 
     <div class="fullscreen-bg">
-        <video autoplay class="fullscreen-bg__video">
+        <video autoplay preload="auto" class="fullscreen-bg__video">
          <source src='media/test.mp4' type="video/mp4">
             video not supported
         </video>
-    </div>
-
-    <div class="tagline">
-           A r t  &middot; T e c h n o l o g y  &middot;  L i f e
     </div>
 
     <div class = "copyright">

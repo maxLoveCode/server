@@ -28,7 +28,7 @@ body {
 .menu li {
     margin:0px;
     list-style:none;
-    font-family:'Ek Mukta';
+    font-family:tagline-font;
 }
  
 .menu a {
@@ -98,19 +98,7 @@ body {
     background:darkcyan;
 }
 
-.tagline {
-    color: white;
-    position: absolute;
-    float: left;
-    top: 300pt;
-    align-content: center;
-    text-align: center !important;
-    clear: both;
-    font-size: 40pt;
-    left: 0;
-    right: 0;
-    font-family: tagline-font;
-}
+
 
 .fullscreen-bg {
     position: fixed;

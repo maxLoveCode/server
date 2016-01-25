@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
 {% load staticfiles %}
+<html manifest="static/website.appcache">
 <head>
 
     <link rel="stylesheet" type="text/css" href= "{% static 'home/home.css' %}" />
@@ -38,7 +38,7 @@
     </div>
 
     <div class="fullscreen-bg">
-        <video autoplay class="fullscreen-bg__video">
+        <video autoplay preload="auto" class="fullscreen-bg__video">
          <source src='media/test.mp4' type="video/mp4">
             video not supported
         </video>
