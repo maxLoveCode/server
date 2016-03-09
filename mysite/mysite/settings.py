@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'users',
     'home',
     'cvproject',
+    'game'
 )
 
 MIDDLEWARE_CLASSES = (

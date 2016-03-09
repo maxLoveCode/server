@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $(".fullscreen-bg__video").bind('ended', function(){
         this.play();
     });
